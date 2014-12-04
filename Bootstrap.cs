@@ -17,7 +17,7 @@ namespace YouWavesIntegrationTests
             //container.AddNewExtension<FrameworkExtendedContainer>();
             container.RegisterType<ITest, IsramarImageAnalyzerTests>("IsramarImageAnalyzerTests");
             container.RegisterType<IEnumerable<ITest>, ITest[]>();
-            container.RegisterType<ITestsRunner, TestsRunner>();
+            container.RegisterType<ITestsRunner, TestsRunner>(); 
 
             return container;
         }
